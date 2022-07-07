@@ -12,7 +12,7 @@
 	<category_index>0</category_index>
 	<zoom>1.0</zoom>
 	<x>0</x>
-	<y>0</y>
+	<y>228</y>
 	<default_color>
 		<r>128</r>
 		<g>128</g>
@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2022-07-04 18:44:16</creation_date>
-			<updated_date>2022-07-07 21:03:45</updated_date>
+			<updated_date>2022-07-07 21:24:10</updated_date>
 			<model_property>
 				<name>프로젝트명</name>
 				<value></value>
@@ -254,7 +254,7 @@
 		</word>
 		<word>
 			<id>5</id>
-			<length>20</length>
+			<length>1</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -266,7 +266,7 @@
 			<description>포인트</description>
 			<logical_name>포인트</logical_name>
 			<physical_name>point</physical_name>
-			<type>bigint(n)</type>
+			<type>tinyint(n)</type>
 		</word>
 		<word>
 			<id>6</id>
@@ -512,7 +512,7 @@
 			<connections>
 				<relation>
 					<id>0</id>
-					<source>4</source>
+					<source>2</source>
 					<target>0</target>
 						<source_xp>-1</source_xp>
 						<source_yp>-1</source_yp>
@@ -534,7 +534,7 @@
 				</relation>
 				<relation>
 					<id>1</id>
-					<source>2</source>
+					<source>4</source>
 					<target>0</target>
 						<source_xp>-1</source_xp>
 						<source_yp>-1</source_yp>
@@ -598,7 +598,7 @@
 				<normal_column>
 					<id>1</id>
 					<referenced_column>11</referenced_column>
-					<relation>1</relation>
+					<relation>0</relation>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
@@ -632,7 +632,7 @@
 				<normal_column>
 					<id>2</id>
 					<referenced_column>19</referenced_column>
-					<relation>0</relation>
+					<relation>1</relation>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
@@ -703,7 +703,7 @@
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
 					<physical_name></physical_name>
-					<type>bigint(n)</type>
+					<type>tinyint(n)</type>
 					<constraint></constraint>
 					<default_value></default_value>
 					<auto_increment>false</auto_increment>
@@ -730,7 +730,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>8</word_id>
+					<word_id>7</word_id>
 					<id>5</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -763,7 +763,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>14</word_id>
+					<word_id>17</word_id>
 					<id>6</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -1064,7 +1064,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>10</word_id>
+					<word_id>8</word_id>
 					<id>13</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -1097,7 +1097,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>17</word_id>
+					<word_id>14</word_id>
 					<id>14</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -1254,7 +1254,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>7</word_id>
+					<word_id>10</word_id>
 					<id>17</id>
 					<description></description>
 					<unique_key_name></unique_key_name>

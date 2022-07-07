@@ -15,7 +15,7 @@ CREATE TABLE `point_hst` (
   `user_id` varchar(255) NOT NULL,
   `review_id` varchar(255) NOT NULL,
   `apply_type_cd` varchar(255),
-  `point` bigint(20),
+  `point` tinyint(1),
   `reg_dtime` datetime DEFAULT NULL,
   `upt_dtime` datetime DEFAULT NULL,
   PRIMARY KEY (`point_id`),
@@ -47,3 +47,6 @@ CREATE TABLE `image` (
   PRIMARY KEY (`image_id`),
   FOREIGN KEY (review_id) REFERENCES review (review_id)
 );
+
+CREATE INDEX IDX_POINT_HIST ON point_hist 
+(reivew_id, user_id);
