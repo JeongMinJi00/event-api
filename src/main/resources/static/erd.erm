@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2022-07-04 18:44:16</creation_date>
-			<updated_date>2022-07-07 13:14:29</updated_date>
+			<updated_date>2022-07-07 21:03:45</updated_date>
 			<model_property>
 				<name>프로젝트명</name>
 				<value></value>
@@ -174,7 +174,7 @@
 	<dictionary>
 		<word>
 			<id>0</id>
-			<length>20</length>
+			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -190,7 +190,7 @@
 		</word>
 		<word>
 			<id>1</id>
-			<length>2000</length>
+			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -206,7 +206,7 @@
 		</word>
 		<word>
 			<id>2</id>
-			<length>100</length>
+			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -222,7 +222,7 @@
 		</word>
 		<word>
 			<id>3</id>
-			<length>100</length>
+			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -238,7 +238,7 @@
 		</word>
 		<word>
 			<id>4</id>
-			<length>200</length>
+			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -254,7 +254,7 @@
 		</word>
 		<word>
 			<id>5</id>
-			<length>5</length>
+			<length>20</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -266,7 +266,7 @@
 			<description>포인트</description>
 			<logical_name>포인트</logical_name>
 			<physical_name>point</physical_name>
-			<type>int(n)</type>
+			<type>bigint(n)</type>
 		</word>
 		<word>
 			<id>6</id>
@@ -282,7 +282,7 @@
 			<description>포인트아이디</description>
 			<logical_name>포인트아이디</logical_name>
 			<physical_name>point_id</physical_name>
-			<type>int(n)</type>
+			<type>bigint(n)</type>
 		</word>
 		<word>
 			<id>7</id>
@@ -366,7 +366,7 @@
 		</word>
 		<word>
 			<id>12</id>
-			<length>100</length>
+			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -462,7 +462,7 @@
 		</word>
 		<word>
 			<id>18</id>
-			<length>100</length>
+			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -478,7 +478,7 @@
 		</word>
 		<word>
 			<id>19</id>
-			<length>100</length>
+			<length>255</length>
 			<decimal>null</decimal>
 			<array>false</array>
 			<array_dimension>null</array_dimension>
@@ -569,7 +569,7 @@
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
 					<physical_name></physical_name>
-					<type>int(n)</type>
+					<type>bigint(n)</type>
 					<constraint></constraint>
 					<default_value></default_value>
 					<auto_increment>true</auto_increment>
@@ -703,7 +703,7 @@
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
 					<physical_name></physical_name>
-					<type>int(n)</type>
+					<type>bigint(n)</type>
 					<constraint></constraint>
 					<default_value></default_value>
 					<auto_increment>false</auto_increment>
