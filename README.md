@@ -8,7 +8,8 @@
 - H2(Database)
 
 ### 2. 테이블 설계
-
+![image](https://user-images.githubusercontent.com/22049906/177768907-1088f0b5-0e23-4b23-b606-3b1e24fa676b.png)
+  
 
 ### 3. API 목록
 |Method|URL|Description|
