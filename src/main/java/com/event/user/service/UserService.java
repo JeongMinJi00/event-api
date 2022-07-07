@@ -29,6 +29,7 @@ public class UserService {
 		return UserResponseDto.builder()
 				.userId(userId)
 				.totalPoint(totalPoint)
+				.pointHsts(points)
 				.build();
 	}
 }

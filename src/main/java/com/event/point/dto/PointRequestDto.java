@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PointRequestDto {
 
-	private int pointId;
+	private String pointId;
 	private String userId;
 	private ApplyType applyTypeCd;
 	private long point;
@@ -21,7 +21,7 @@ public class PointRequestDto {
 	private String reviewId;
 	
 	@Builder
-	public PointRequestDto(int pointId, String userId, ApplyType applyTypeCd, long point, LocalDateTime regDtime, LocalDateTime uptDtime, String reviewId) {
+	public PointRequestDto(String pointId, String userId, ApplyType applyTypeCd, long point, LocalDateTime regDtime, LocalDateTime uptDtime, String reviewId) {
 		this.pointId = pointId;
 		this.userId = userId;
 		this.applyTypeCd = applyTypeCd;

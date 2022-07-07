@@ -8,11 +8,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PointResponseDto {
 
-	private int code;
+	private String code;
 	private String msg;
 	
 	@Builder
-	public PointResponseDto(int code, String msg) {
+	public PointResponseDto(String code, String msg) {
 		this.code = code;
 		this.msg = msg;
 	}

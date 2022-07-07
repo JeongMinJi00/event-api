@@ -2,14 +2,14 @@ package com.event.frm.exception;
 
 public class BaseException extends RuntimeException {
 
-    private int errorCode;
+    private String errorCode;
     
-    public BaseException(int errorCode, String message){
+    public BaseException(String errorCode, String message){
         super(message);
         this.errorCode = errorCode;
     }
 
-    public int errorCode() {
+    public String errorCode() {
         return this.errorCode;
     }
 }

@@ -1,16 +1,17 @@
 package com.event.point.domain;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import com.event.point.dto.ApplyType;
@@ -25,9 +26,10 @@ import lombok.Setter;
 @NoArgsConstructor
 public class PointHst {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "point_id")
-	private int pointId;	//포인트 아이디
+	@Id @GeneratedValue(generator = "uuid2")
+	@GenericGenerator(name = "uuid", strategy = "uuid2")
+	@Column(name = "point_id", columnDefinition = "VARCHAR(255)")
+	private UUID pointId;
 	
 	@Enumerated(EnumType.STRING)
 	private ApplyType applyTypeCd;	//지급유형(지급/회수)
@@ -45,7 +47,7 @@ public class PointHst {
 	private String reviewId;	//리뷰 아이디
 	
 	@Builder
-	public PointHst(int pointId, ApplyType applyTypeCd, long point, String userId, LocalDateTime regDtime, LocalDateTime uptDtime, String reviewId) {
+	public PointHst(UUID pointId, ApplyType applyTypeCd, long point, String userId, LocalDateTime regDtime, LocalDateTime uptDtime, String reviewId) {
 		this.pointId = pointId;
 		this.applyTypeCd = applyTypeCd;
 		this.point = point;
